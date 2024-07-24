@@ -6,9 +6,9 @@ while True:
     for i in range(0,H):
         for j in range(0,W):
             if (i+j)%2==0:
-                print('#' ,end='')
+                print('.' ,end='')
             else:
-                print('.', end='')
-        print('')#
+                print('#', end='')
+        print()#なんでこれで改行になるの
                 
     print()

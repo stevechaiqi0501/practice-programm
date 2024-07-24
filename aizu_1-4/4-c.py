@@ -17,3 +17,26 @@ while True:
         print(a*b)
     elif op == '/':
         print (int(a/b))
+        
+while True:
+    N=list(input().split())
+    
+    a=int(N[0])
+    op=N[1]
+    b=int(N[2])
+    
+    if op == '?':
+        break
+    
+    if op == '+':
+        print(a+b)
+    
+    elif op == '-':
+        print(a-b)
+    
+    elif op == '*':
+        print(a*b)
+        
+    elif op == '/':
+        print(a//b)
+        
