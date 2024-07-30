@@ -1,24 +1,18 @@
-suit='SHCD'
-n=int(input())
-
-exist=[[False]*14 for i in range(4)]
-for i in range(n):
-    s,num=input().split()
-    num=int(num)
-    exist[suit.find(s)][num]=True
-for i in range(4):
-    for j in range(1,14):
-        if not exist[i][j]:
-            print(exist[i],j)
-            
-suit="SHCD"
+suit = 'SHCD'
 n=int(input())
 exist=[[False]*14 for i in range(4)]
 for i in range(n):
-    s,num=input().split()
-    num=int(num)
+    s,num = input().split()
+    num = int(num)
     exist[suit.find(s)][num]=True
 for i in range(4):
-    for j in range(1,14):
+    for j in range(1,14):#なんで、引数はこの形なの？
         if not exist[i][j]:
             print(suit[i],j)
+
+'''
+[[False, False, False, False, False, False, False, False, False, False, False, False, False], 
+[False, False, False, False, False, False, False, False, False, False, False, False, False], 
+[False, False, False, False, False, False, False, False, False, False, False, False, False], 
+[False, False, False, False, False, False, False, False, False, False, False, False, False]]
+'''

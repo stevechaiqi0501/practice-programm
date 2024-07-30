@@ -11,5 +11,3 @@ for i in range(n):
         c[i]+=a[i][j]*b[j]
 for i in range(n):
     print(c[i])
-
-        
